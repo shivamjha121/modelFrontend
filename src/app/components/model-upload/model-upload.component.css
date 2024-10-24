@@ -1,0 +1,9 @@
+.container {
+  margin-left: 260px;
+  margin-top: 4rem;
+  height: auto; /* Auto height to expand with content */
+}
+.map-container {
+  width: 90%;
+  height: 500px; /* Adjust the height as needed */
+}

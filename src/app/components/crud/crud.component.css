@@ -1,0 +1,86 @@
+.container {
+  margin-left: 260px;
+  margin-top: 4rem;
+  height: auto; /* Auto height to expand with content */
+}
+
+.inputField {
+  width: 300px;
+  font-size: 13px;
+  padding: 3px;
+  border: 1px solid #ddd;
+  outline: none !important;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.submitButton,
+.dbButton {
+  font-size: 13px;
+  padding: 4px;
+  border: 1px solid #ddd;
+  outline: none !important;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+#citySelect {
+  display: none;
+}
+
+#sectorInput,
+#developerInput,
+#projectInput {
+  display: block;
+}
+
+.infoText {
+  font-size: 16px;
+  padding: 8px;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 14px;
+  display: none;
+  margin-top: 5px;
+}
+
+#dbButton {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  z-index: 2;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.label {
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+}
+
+.required {
+  color: red;
+  margin-left: 5px;
+}
+
+/* New style for input container */
+#inputContainer {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  z-index: 1;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 670px;
+  /* Limit height */
+  overflow-y: auto;
+  /* Add scrolling */
+  width: 400px;
+  /* Fixed width */
+}

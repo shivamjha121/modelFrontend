@@ -1,0 +1,117 @@
+<div class="container">
+  <h1>Crud</h1>
+  <div class="tab-pane " id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+    <div style="
+margin: auto;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+">
+        <div style="display: flex; margin-bottom: 15px">
+            <!-- Input Filter -->
+            <div style="flex: 1; margin-right: 10px">
+                <input type="text" id="developer_idFilter" placeholder="Enter text..." style="
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    " />
+            </div>
+            <!-- First Select Filter -->
+            <div style="flex: 1; margin-right: 10px">
+                <select id="developer_nameFilter" style="
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    ">
+    <option value="">Select Name</option>
+    <option value="goa_project">goa_project</option>
+    <option value="yeidamap_project	">yeidamap_project	</option>
+
+    </select>
+            </div>
+            <!-- Status Select Filter -->
+            <div style="flex: 1; margin-right: 10px">
+                <select id="developer_statusFilter" style="
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    ">
+                    <option value="">Select Status</option>
+                    <option value="1">1</option>
+                    <option value="0">0</option>
+                </select>
+            </div>
+            <!-- Remaining Select Filters -->
+            <div style="flex: 1; margin-right: 10px">
+                <select id="categoryFilter" style="
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    ">
+                    <option value="">Select Category</option>
+                </select>
+            </div>
+            <div style="flex: 1; margin-right: 10px">
+                <select id="subCategoryFilter" style="
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    ">
+                    <option value="">Select SubCategory</option>
+                </select>
+            </div>
+            <div style="flex: 1">
+                <select id="stateFilter" style="
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    ">
+                    <option value="">Select State</option>
+                </select>
+            </div>
+            <!-- Button on the same line -->
+            <div style="flex: 1; margin-left: 10px">
+                <button style="
+      width: 100%;
+      padding: 8px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    " (click)="applyFilters()">
+                    Apply Filters
+                </button>
+            </div>
+        </div>
+        <div>
+            <!-- Table to Display Fetched Data -->
+            <div id="tableDiv" style="width: 100%; margin-top: 20px; display: none;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th style="border: 1px solid #ccc; padding: 8px;">Name</th>
+                            <th style="border: 1px solid #ccc; padding: 8px;">Developer Name</th>
+                            <th style="border: 1px solid #ccc; padding: 8px;">Category</th>
+                            <th style="border: 1px solid #ccc; padding: 8px;">SubCategory</th>
+                            <th style="border: 1px solid #ccc; padding: 8px;">State</th>
+                            <!-- <th style="border: 1px solid #ccc; padding: 8px;">City</th> -->
+                            <th style="border: 1px solid #ccc; padding: 8px;">Date</th>
+                            <th style="border: 1px solid #ccc; padding: 8px;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dataTableBody">
+                        <!-- Fetched data will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
